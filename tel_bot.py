@@ -38,5 +38,6 @@ def callback_worker(call):
         msg = 'Зайти в раздел "Сервисы" на home.mephi.ru'
         # Отправляем текст в Телеграм
         bot.send_message(call.message.chat.id, msg)
+        bot.send_photo(call.message.chat.id, photo=open('bee-on-daisy.jpg', 'rb'))
 
 bot.polling(none_stop=True)
