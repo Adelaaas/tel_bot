@@ -5,7 +5,7 @@ import pandas as pd
 
 bot = telebot.TeleBot('1786855905:AAGhI5rJX-StfEnQfNVQsh3RVSm5Z4EaTYw')
 
-df = pd.read_csv('test5.csv')
+df = pd.read_csv('test5_1.csv')
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
